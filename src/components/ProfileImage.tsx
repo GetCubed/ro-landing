@@ -3,7 +3,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
-import { PROFILE_CONFIG } from '../constants/profile';
 
 const ProfileImageContainer = styled.div`
   position: relative;
