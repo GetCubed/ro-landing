@@ -6,6 +6,7 @@ landing page built with Next.js, TypeScript, styled-components, and Storybook, f
 
 - **Modern Tech Stack**: Next.js 15 with App Router, TypeScript, styled-components
 - **Beautiful Design**: Catppuccin Macchiato theme with gradient text and glow effects
+- **Theme Toggle**: Switch between Catppuccin Latte (light) and Macchiato (dark) themes
 - **Social Links**: LinkedIn, GitHub, and external website icons
 - **Component Library**: Storybook for component development and documentation
 - **Responsive**: Fully responsive design that works on all devices
@@ -19,7 +20,7 @@ landing page built with Next.js, TypeScript, styled-components, and Storybook, f
 - **Icons**: react-icons
 - **Package Manager**: pnpm
 - **Component Development**: Storybook
-- **Theme**: Catppuccin Macchiato
+- **Theme**: Catppuccin Macchiato & Latte
 
 ## 🎨 Design System
 
@@ -56,18 +57,23 @@ Open [http://localhost:6006](http://localhost:6006) to view the component librar
 ```
 src/
 ├── app/                    # Next.js App Router
-│   ├── layout.tsx         # Root layout with theme provider
-│   └── page.tsx           # Main landing page
+│   ├── layout.tsx         # Root layout with theme provider and favicon
+│   └── page.tsx           # Main landing page with theme toggle
 ├── components/            # React components
 │   ├── LandingPage.tsx    # Main landing page component
 │   ├── SocialIcons.tsx    # Social media icons component
+│   ├── ThemeToggle.tsx    # Theme toggle button component
 │   └── *.stories.tsx      # Storybook stories
 ├── providers/             # React providers
+│   ├── ThemeProvider.tsx  # Theme context and state management
 │   ├── StyledComponentsProvider.tsx
 │   └── GlobalStyles.tsx   # Global CSS styles
-└── styles/
-    ├── theme.ts           # Catppuccin Macchiato theme
-    └── styled.d.ts        # styled-components type definitions
+├── styles/
+│   ├── theme.ts           # Catppuccin themes (Macchiato & Latte)
+│   └── styled.d.ts        # styled-components type definitions
+└── public/
+    ├── favicon.svg        # Custom developer-themed favicon
+    └── favicon-16x16.svg  # Smaller favicon for clarity
 ```
 
 ## 🎯 Customization
@@ -106,6 +112,9 @@ The main landing page component with gradient title, subtitle, and social icons.
 
 ### SocialIcons
 Animated social media icons with hover effects for LinkedIn, GitHub, and external links.
+
+### ThemeToggle
+Interactive theme toggle button with sun/moon icons for switching between Catppuccin Latte (light) and Macchiato (dark) themes. Includes localStorage persistence for user preference.
 
 ## 📱 Responsive Design
 
