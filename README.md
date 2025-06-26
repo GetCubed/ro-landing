@@ -1,6 +1,6 @@
-# Storyboard - Coming Soon Landing Page
+# Rhodri Mativo Landing Page
 
-A beautiful "Coming Soon" landing page built with Next.js, TypeScript, styled-components, and Storybook, featuring the Catppuccin Macchiato color scheme.
+landing page built with Next.js, TypeScript, styled-components, and Storybook, featuring the Catppuccin Macchiato color scheme.
 
 ## 🚀 Features
 
