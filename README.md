@@ -16,7 +16,7 @@ landing page built with Next.js, TypeScript, styled-components, and Storybook, f
 
 - **Framework**: Next.js 15 with App Router
 - **Language**: TypeScript
-- **Styling**: styled-components (NO Tailwind CSS)
+- **Styling**: styled-components
 - **Icons**: react-icons
 - **Package Manager**: pnpm
 - **Component Development**: Storybook

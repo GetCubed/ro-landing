@@ -3,6 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SocialIcons from './SocialIcons';
+import ProfileSection from './ProfileSection';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -90,19 +91,30 @@ interface LandingPageProps {
   linkedinUrl?: string;
   githubUrl?: string;
   externalUrl?: string;
+  profile?: {
+    imageSrc?: string;
+    imageAlt?: string;
+    defaultSize?: number;
+  };
 }
 
 export default function LandingPage({
-  title = 'Coming Soon',
-  subtitle = 'Something amazing is being crafted. Stay tuned for updates.',
+  title,
+  subtitle,
   linkedinUrl,
   githubUrl,
   externalUrl,
+  profile,
 }: LandingPageProps) {
   return (
     <Container>
       <GlowEffect />
       <Content>
+        <ProfileSection
+          profileImageSrc={profile?.imageSrc}
+          profileImageAlt={profile?.imageAlt}
+          profileImageSize={profile?.defaultSize}
+        />
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
         <SocialIcons

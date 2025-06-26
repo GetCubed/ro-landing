@@ -84,3 +84,13 @@ export const LaunchingSoon: Story = {
     externalUrl: 'https://yourcompany.com',
   },
 };
+
+export const PersonalProfile: Story = {
+  args: {
+    title: 'Rhodri Mativo',
+    subtitle: 'Full Stack Developer crafting beautiful digital experiences with Next.js, TypeScript, and modern web technologies.',
+    linkedinUrl: 'https://linkedin.com/in/rhodri-mativo',
+    githubUrl: 'https://github.com/rhodri-mativo',
+    externalUrl: 'https://rhodrimativo.dev',
+  },
+};
