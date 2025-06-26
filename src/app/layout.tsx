@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import StyledComponentsProvider from "@/providers/StyledComponentsProvider";
+import { ThemeProvider } from "@/providers/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Rhodri Mativo | Full Stack Developer",
@@ -14,9 +15,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <StyledComponentsProvider>
-          {children}
-        </StyledComponentsProvider>
+        <ThemeProvider>
+          <StyledComponentsProvider>
+            {children}
+          </StyledComponentsProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
