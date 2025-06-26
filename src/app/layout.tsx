@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import StyledComponentsProvider from "@/providers/StyledComponentsProvider";
+import StyledComponentsRegistry from "@/providers/StyledComponentsRegistry";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 
 export const metadata: Metadata = {
@@ -26,11 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider>
-          <StyledComponentsProvider>
-            {children}
-          </StyledComponentsProvider>
-        </ThemeProvider>
+        <StyledComponentsRegistry>
+          <ThemeProvider>
+            <StyledComponentsProvider>
+              {children}
+            </StyledComponentsProvider>
+          </ThemeProvider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
