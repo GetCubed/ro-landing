@@ -27,9 +27,9 @@ export default function ProfileSection({
     return (
         <Container>
             <ProfileImage
-                src={profileImageSrc}
-                alt={profileImageAlt}
-                size={profileImageSize}
+                {...(profileImageSrc && { src: profileImageSrc })}
+                {...(profileImageAlt && { alt: profileImageAlt })}
+                {...(profileImageSize && { size: profileImageSize })}
             />
         </Container>
     );

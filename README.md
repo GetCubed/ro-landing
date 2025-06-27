@@ -78,19 +78,6 @@ src/
 
 ## 🎯 Customization
 
-### Updating Social Links
-
-Edit the URLs in `src/app/page.tsx`:
-
-```tsx
-<LandingPage
-  title="Coming Soon"
-  subtitle="Your custom subtitle here"
-  linkedinUrl="https://linkedin.com/in/your-profile"
-  githubUrl="https://github.com/your-username"
-  externalUrl="https://your-website.com"
-/>
-```
 
 ### Customizing Colors
 

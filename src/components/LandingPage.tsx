@@ -111,16 +111,16 @@ export default function LandingPage({
       <GlowEffect />
       <Content>
         <ProfileSection
-          profileImageSrc={profile?.imageSrc}
-          profileImageAlt={profile?.imageAlt}
-          profileImageSize={profile?.defaultSize}
+          {...(profile?.imageSrc && { profileImageSrc: profile.imageSrc })}
+          {...(profile?.imageAlt && { profileImageAlt: profile.imageAlt })}
+          {...(profile?.defaultSize && { profileImageSize: profile.defaultSize })}
         />
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
         <SocialIcons
-          linkedinUrl={linkedinUrl}
-          githubUrl={githubUrl}
-          externalUrl={externalUrl}
+          {...(linkedinUrl && { linkedinUrl })}
+          {...(githubUrl && { githubUrl })}
+          {...(externalUrl && { externalUrl })}
         />
       </Content>
     </Container>
