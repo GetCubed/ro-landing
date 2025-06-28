@@ -2,6 +2,8 @@
 
 landing page built with Next.js, TypeScript, styled-components, and Storybook, featuring the Catppuccin Macchiato color scheme.
 
+![Front Page](public/front-page.svg)
+
 ## 🚀 Features
 
 - **Modern Tech Stack**: Next.js 15 with App Router, TypeScript, styled-components
