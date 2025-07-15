@@ -1,5 +1,5 @@
 {
-  "name": "rhodri-app",
+  "name": "ro-landing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@next/eslint-plugin-next": "^15.4.1",
     "@storybook/nextjs": "^9.0.13",
     "@storybook/react": "^9.0.13",
     "@types/node": "^20",

@@ -53,11 +53,11 @@ const eslintConfig = [
       "@next/next/no-assign-module-variable": "error",
       "@next/next/no-duplicate-head": "error",
       "@next/next/no-head-element": "error",
-      
+
       // React strict rules
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "error",
-      
+
       // TypeScript strict rules
       "@typescript-eslint/no-unused-vars": "error",
       "@typescript-eslint/no-explicit-any": "warn",
@@ -65,7 +65,7 @@ const eslintConfig = [
       "@typescript-eslint/prefer-as-const": "error",
       "@typescript-eslint/no-non-null-assertion": "warn",
       "@typescript-eslint/no-empty-function": "warn",
-      
+
       // General code quality
       "no-console": "warn",
       "no-debugger": "error",

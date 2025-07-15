@@ -11,7 +11,7 @@ export default function Home() {
         subtitle="Full Stack Developer crafting beautiful digital experiences with Next.js, TypeScript, and modern web technologies."
         linkedinUrl="https://www.linkedin.com/in/rhodrimativo"
         githubUrl="https://github.com/GetCubed"
-        externalUrl="https://rhodri-app.vercel.app/"
+        externalUrl="https://ro-mativo.vercel.app/"
         profile={PROFILE_CONFIG}
       />
     </>
