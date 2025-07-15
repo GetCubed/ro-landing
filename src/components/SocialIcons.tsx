@@ -7,15 +7,15 @@ import IconContainer from './Icon/IconContainer';
 import Image from 'next/image';
 
 interface SocialIconsProps {
-  linkedinUrl?: string;
-  githubUrl?: string;
-  externalUrl?: string;
+  linkedinUrl: string;
+  githubUrl: string;
+  externalUrl: string;
 }
 
 export default function SocialIcons({
-  linkedinUrl = 'https://linkedin.com',
-  githubUrl = 'https://github.com',
-  externalUrl = 'https://bellevue-dashboard.vercel.app',
+  linkedinUrl,
+  githubUrl,
+  externalUrl,
 }: SocialIconsProps) {
   return (
     <IconContainer>
@@ -37,14 +37,18 @@ export default function SocialIcons({
         <FaGithub />
       </IconLink>
 
+      {/* <IconLink
+        href={externalUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Dashboard Link"
+      >      */}
       <IconLink
         href={externalUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Dashboard Link"
-
       >
-
         <Image
           src="/icons/bellevue.svg"
           alt="Bellevue Dashboard"

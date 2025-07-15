@@ -14,9 +14,9 @@ const Container = styled.div`
 `;
 
 interface ProfileSectionProps {
-    profileImageSrc?: string;
-    profileImageAlt?: string;
-    profileImageSize?: number;
+    profileImageSrc: string;
+    profileImageAlt: string;
+    profileImageSize: number;
 }
 
 export default function ProfileSection({
@@ -27,9 +27,9 @@ export default function ProfileSection({
     return (
         <Container>
             <ProfileImage
-                {...(profileImageSrc && { src: profileImageSrc })}
-                {...(profileImageAlt && { alt: profileImageAlt })}
-                {...(profileImageSize && { size: profileImageSize })}
+                src={profileImageSrc}
+                alt={profileImageAlt}
+                size={profileImageSize}
             />
         </Container>
     );

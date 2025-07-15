@@ -86,24 +86,19 @@ const Content = styled.div`
 `;
 
 interface LandingPageProps {
-  title?: string;
-  subtitle?: string;
-  linkedinUrl?: string;
-  githubUrl?: string;
-  externalUrl?: string;
-  profile?: {
-    imageSrc?: string;
-    imageAlt?: string;
-    defaultSize?: number;
+  profile: {
+    title: string;
+    subtitle: string;
+    linkedinUrl: string;
+    githubUrl: string;
+    externalUrl: string;
+    imageSrc: string;
+    imageAlt: string;
+    defaultSize: number;
   };
 }
 
 export default function LandingPage({
-  title,
-  subtitle,
-  linkedinUrl,
-  githubUrl,
-  externalUrl,
   profile,
 }: LandingPageProps) {
   return (
@@ -111,16 +106,16 @@ export default function LandingPage({
       <GlowEffect />
       <Content>
         <ProfileSection
-          {...(profile?.imageSrc && { profileImageSrc: profile.imageSrc })}
-          {...(profile?.imageAlt && { profileImageAlt: profile.imageAlt })}
-          {...(profile?.defaultSize && { profileImageSize: profile.defaultSize })}
+          profileImageSrc={profile.imageSrc}
+          profileImageAlt={profile.imageAlt}
+          profileImageSize={profile.defaultSize}
         />
-        <Title>{title}</Title>
-        <Subtitle>{subtitle}</Subtitle>
+        <Title>{profile.title}</Title>
+        <Subtitle>{profile.subtitle}</Subtitle>
         <SocialIcons
-          {...(linkedinUrl && { linkedinUrl })}
-          {...(githubUrl && { githubUrl })}
-          {...(externalUrl && { externalUrl })}
+          linkedinUrl={profile.linkedinUrl}
+          githubUrl={profile.githubUrl}
+          externalUrl={profile.externalUrl}
         />
       </Content>
     </Container>

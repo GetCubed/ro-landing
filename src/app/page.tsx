@@ -7,11 +7,6 @@ export default function Home() {
     <>
       <ThemeToggle />
       <LandingPage
-        title="Rhodri Mativo"
-        subtitle="Full Stack Developer crafting beautiful digital experiences with Next.js, TypeScript, and modern web technologies."
-        linkedinUrl="https://www.linkedin.com/in/rhodrimativo"
-        githubUrl="https://github.com/GetCubed"
-        externalUrl="https://ro-mativo.vercel.app/"
         profile={PROFILE_CONFIG}
       />
     </>
