@@ -29,25 +29,9 @@ const meta: Meta<typeof LandingPage> = {
   ],
   tags: ['autodocs'],
   argTypes: {
-    title: {
-      control: 'text',
-      description: 'Main title text',
-    },
-    subtitle: {
-      control: 'text',
-      description: 'Subtitle text',
-    },
-    linkedinUrl: {
-      control: 'text',
-      description: 'LinkedIn profile URL',
-    },
-    githubUrl: {
-      control: 'text',
-      description: 'GitHub profile URL',
-    },
-    externalUrl: {
-      control: 'text',
-      description: 'External website URL',
+    profile: {
+      control: 'object',
+      description: 'Profile configuration object',
     },
   },
 };
@@ -57,40 +41,60 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    title: 'Coming Soon',
-    subtitle: 'Something amazing is being crafted. Stay tuned for updates.',
-    linkedinUrl: 'https://linkedin.com/in/example',
-    githubUrl: 'https://github.com/example',
-    externalUrl: 'https://example.com',
+    profile: {
+      title: 'Coming Soon',
+      subtitle: 'Something amazing is being crafted. Stay tuned for updates.',
+      linkedinUrl: 'https://linkedin.com/in/example',
+      githubUrl: 'https://github.com/example',
+      externalUrl: 'https://example.com',
+      imageSrc: '',
+      imageAlt: '',
+      defaultSize: 128,
+    },
   },
 };
 
 export const CustomContent: Story = {
   args: {
-    title: 'Under Construction',
-    subtitle: 'We are working hard to bring you something spectacular. Check back soon!',
-    linkedinUrl: 'https://linkedin.com/in/johndoe',
-    githubUrl: 'https://github.com/johndoe',
-    externalUrl: 'https://johndoe.dev',
+    profile: {
+      title: 'Under Construction',
+      subtitle: 'We are working hard to bring you something spectacular. Check back soon!',
+      linkedinUrl: 'https://linkedin.com/in/johndoe',
+      githubUrl: 'https://github.com/johndoe',
+      externalUrl: 'https://johndoe.dev',
+      imageSrc: '',
+      imageAlt: '',
+      defaultSize: 128,
+    },
   },
 };
 
 export const LaunchingSoon: Story = {
   args: {
-    title: 'Launching Soon',
-    subtitle: 'Get ready for an amazing experience. Follow us for updates and be the first to know when we go live.',
-    linkedinUrl: 'https://linkedin.com/company/yourcompany',
-    githubUrl: 'https://github.com/yourcompany',
-    externalUrl: 'https://yourcompany.com',
+    profile: {
+      title: 'Launching Soon',
+      subtitle: 'Get ready for an amazing experience. Follow us for updates and be the first to know when we go live.',
+      linkedinUrl: 'https://linkedin.com/company/yourcompany',
+      githubUrl: 'https://github.com/yourcompany',
+      externalUrl: 'https://yourcompany.com',
+      imageSrc: '',
+      imageAlt: '',
+      defaultSize: 128,
+    },
   },
 };
 
 export const PersonalProfile: Story = {
   args: {
-    title: 'Rhodri Mativo',
-    subtitle: 'Full Stack Developer crafting beautiful digital experiences with Next.js, TypeScript, and modern web technologies.',
-    linkedinUrl: 'https://linkedin.com/in/rhodri-mativo',
-    githubUrl: 'https://github.com/rhodri-mativo',
-    externalUrl: 'https://rhodrimativo.dev',
+    profile: {
+      title: 'Rhodri Mativo',
+      subtitle: 'Full Stack Developer crafting beautiful digital experiences with Next.js, TypeScript, and modern web technologies.',
+      linkedinUrl: 'https://linkedin.com/in/rhodri-mativo',
+      githubUrl: 'https://github.com/rhodri-mativo',
+      externalUrl: 'https://bellevue-dashboard.vercel.dev',
+      imageSrc: '',
+      imageAlt: '',
+      defaultSize: 128,
+    },
   },
 };
