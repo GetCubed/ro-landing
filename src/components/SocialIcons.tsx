@@ -9,13 +9,13 @@ import Image from 'next/image';
 interface SocialIconsProps {
   linkedinUrl?: string;
   githubUrl?: string;
-  dashbordUrl?: string;
+  externalUrl?: string;
 }
 
 export default function SocialIcons({
   linkedinUrl = 'https://linkedin.com',
   githubUrl = 'https://github.com',
-  dashbordUrl = 'https://bellevue-dashboard.vercel.app',
+  externalUrl = 'https://bellevue-dashboard.vercel.app',
 }: SocialIconsProps) {
   return (
     <IconContainer>
@@ -38,7 +38,7 @@ export default function SocialIcons({
       </IconLink>
 
       <IconLink
-        href={dashbordUrl}
+        href={externalUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Dashboard Link"
