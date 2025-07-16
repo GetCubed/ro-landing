@@ -30,8 +30,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        profileImageSrc: '/images/rhodri-profile.svg',
-        profileImageAlt: 'Rhodri Mativo',
+        profileImageSrc: '/images/ro-profile.svg',
+        profileImageAlt: 'Ro Mativo',
     },
 };
 
@@ -44,8 +44,8 @@ export const WithCustomImage: Story = {
 
 export const SmallViewport: Story = {
     args: {
-        profileImageSrc: '/images/rhodri-profile.svg',
-        profileImageAlt: 'Rhodri Mativo',
+        profileImageSrc: '/images/ro-profile.svg',
+        profileImageAlt: 'ro Mativo',
     },
     parameters: {
         viewport: {

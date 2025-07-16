@@ -4,8 +4,8 @@ import StyledComponentsRegistry from "@/providers/StyledComponentsRegistry";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "Rhodri Mativo | Full Stack Developer",
-  description: "Next.js, TypeScript, styled-components, Storybook",
+  title: "Ro Mativo | Full Stack Developer",
+  description: 'Full Stack Developer crafting beautiful digital experiences with Next.js, TypeScript, and modern web technologies.',
   icons: {
     // Modern browsers - primary favicon
     icon: [

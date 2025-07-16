@@ -87,10 +87,10 @@ export const LaunchingSoon: Story = {
 export const PersonalProfile: Story = {
   args: {
     profile: {
-      title: 'Rhodri Mativo',
+      title: 'Ro Mativo',
       subtitle: 'Full Stack Developer crafting beautiful digital experiences with Next.js, TypeScript, and modern web technologies.',
-      linkedinUrl: 'https://linkedin.com/in/rhodri-mativo',
-      githubUrl: 'https://github.com/rhodri-mativo',
+      linkedinUrl: 'https://linkedin.com/in/rhodrimativo',
+      githubUrl: 'https://github.com/getcubed',
       externalUrl: 'https://bellevue-dashboard.vercel.dev',
       imageSrc: '',
       imageAlt: '',
