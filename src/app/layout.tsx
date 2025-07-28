@@ -3,6 +3,8 @@ import StyledComponentsProvider from "@/providers/StyledComponentsProvider";
 import StyledComponentsRegistry from "@/providers/StyledComponentsRegistry";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 
+import { Analytics } from "@vercel/analytics/next";
+
 export const metadata: Metadata = {
   title: "Ro Mativo | Full Stack Developer",
   description: 'Full Stack Developer crafting beautiful digital experiences with Next.js, TypeScript, and modern web technologies.',
@@ -34,6 +36,7 @@ export default function RootLayout({
             </StyledComponentsProvider>
           </ThemeProvider>
         </StyledComponentsRegistry>
+        <Analytics />
       </body>
     </html>
   );
